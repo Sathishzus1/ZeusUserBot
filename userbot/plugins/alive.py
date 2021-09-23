@@ -78,7 +78,7 @@ temp = "{ALIVE_TEXT}\n\n\
 **{EMOJI} Master : {mention}**\n\
 **{EMOJI} Uptime :** `{uptime}`\n\
 **{EMOJI} Telethon version :** `{telever}`\n\
-**{EMOJI} Catuserbot Version :** `{catver}`\n\
+**{EMOJI} ZeusBot Version :** `{catver}`\n\
 **{EMOJI} Python Version :** `{pyver}`\n\
 **{EMOJI} Database :** `{dbhealth}`\n"
 
@@ -101,7 +101,7 @@ async def amireallyalive(event):
     ALIVE_TEXT = "**Catuserbot is Up and Running**"
     cat_caption = f"{ALIVE_TEXT}\n"
     cat_caption += f"**{EMOJI} Telethon version :** `{version.__version__}\n`"
-    cat_caption += f"**{EMOJI} Catuserbot Version :** `{catversion}`\n"
+    cat_caption += f"**{EMOJI} ZeusBot Version :** `{catversion}`\n"
     cat_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
     cat_caption += f"**{EMOJI} Master:** {mention}\n"
     results = await event.client.inline_query(Config.TG_BOT_USERNAME, cat_caption)
