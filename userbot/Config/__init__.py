@@ -1,1 +1,1 @@
-from .catub_config import Config
+from .zeus_config import Config
